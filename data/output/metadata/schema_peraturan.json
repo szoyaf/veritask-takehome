@@ -1,0 +1,400 @@
+{
+ "$defs": {
+  "Bidang": {
+   "properties": {
+    "label": {
+     "title": "Label",
+     "type": "string"
+    },
+    "skor": {
+     "description": "share of keyword hits, not a calibrated probability",
+     "maximum": 1,
+     "minimum": 0,
+     "title": "Skor",
+     "type": "number"
+    },
+    "metode": {
+     "const": "keyword_rules_v1",
+     "default": "keyword_rules_v1",
+     "title": "Metode",
+     "type": "string"
+    }
+   },
+   "required": [
+    "label",
+    "skor"
+   ],
+   "title": "Bidang",
+   "type": "object"
+  },
+  "JenisPeraturan": {
+   "description": "Daftar baku jenis peraturan (UU 12/2011 jo. UU 13/2022, Pasal 7-8).",
+   "enum": [
+    "UUD",
+    "TAP MPR",
+    "UU",
+    "Perppu",
+    "PP",
+    "Perpres",
+    "Perda Provinsi",
+    "Perda Kabupaten/Kota",
+    "Permen",
+    "Peraturan Badan/Lembaga"
+   ],
+   "title": "JenisPeraturan",
+   "type": "string"
+  },
+  "StatusPeraturan": {
+   "enum": [
+    "berlaku",
+    "diubah",
+    "dicabut",
+    "dicabut_sebagian"
+   ],
+   "title": "StatusPeraturan",
+   "type": "string"
+  }
+ },
+ "properties": {
+  "id": {
+   "asal": "turunan",
+   "description": "ID stabil `<jenis>-<tahun>-<nomor>`, dibentuk ulang dari jenis/tahun/nomor",
+   "pattern": "^[a-z]+-\\d{4}-\\d+$",
+   "title": "Id",
+   "type": "string"
+  },
+  "jenis": {
+   "$ref": "#/$defs/JenisPeraturan",
+   "asal": "ekstraksi",
+   "description": "Jenis peraturan (daftar baku)"
+  },
+  "nomor": {
+   "asal": "ekstraksi",
+   "description": "Nomor peraturan",
+   "title": "Nomor",
+   "type": "integer"
+  },
+  "tahun": {
+   "asal": "ekstraksi",
+   "description": "Tahun peraturan",
+   "title": "Tahun",
+   "type": "integer"
+  },
+  "judul": {
+   "asal": "ekstraksi",
+   "description": "Judul lengkap, mis. 'Undang-Undang Nomor 1 Tahun 2024 tentang Perubahan Kedua atas ...'",
+   "title": "Judul",
+   "type": "string"
+  },
+  "tentang": {
+   "asal": "turunan",
+   "description": "Subjek inti untuk pencarian (frasa 'tentang' terakhir di judul)",
+   "title": "Tentang",
+   "type": "string"
+  },
+  "judul_singkat": {
+   "asal": "turunan",
+   "description": "Label pendek untuk header chunk, mis. 'UU 1/2024'",
+   "title": "Judul Singkat",
+   "type": "string"
+  },
+  "jenis_struktur": {
+   "asal": "turunan",
+   "description": "UU induk atau UU perubahan (dari ada/tidaknya 'Pasal I' + butir)",
+   "enum": [
+    "induk",
+    "perubahan"
+   ],
+   "title": "Jenis Struktur",
+   "type": "string"
+  },
+  "pembentuk": {
+   "asal": "ekstraksi",
+   "description": "Lembaga pembentuk dari 'Dengan Persetujuan Bersama ...'",
+   "items": {
+    "type": "string"
+   },
+   "title": "Pembentuk",
+   "type": "array"
+  },
+  "pemrakarsa": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Pemrakarsa bila disebut di dokumen; UU tidak menyebutnya -> null",
+   "title": "Pemrakarsa"
+  },
+  "penandatangan": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Nama pejabat yang mengesahkan",
+   "title": "Penandatangan"
+  },
+  "jabatan_penandatangan": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Jabatan pejabat yang mengesahkan",
+   "title": "Jabatan Penandatangan"
+  },
+  "pengundang": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Nama menteri yang mengundangkan",
+   "title": "Pengundang"
+  },
+  "jabatan_pengundang": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Jabatan menteri yang mengundangkan",
+   "title": "Jabatan Pengundang"
+  },
+  "tanggal_ditetapkan": {
+   "asal": "ekstraksi",
+   "description": "Tanggal disahkan/ditetapkan (ISO 8601)",
+   "format": "date",
+   "title": "Tanggal Ditetapkan",
+   "type": "string"
+  },
+  "tanggal_diundangkan": {
+   "asal": "ekstraksi",
+   "description": "Tanggal diundangkan (ISO 8601) — bisa beda dari ditetapkan",
+   "format": "date",
+   "title": "Tanggal Diundangkan",
+   "type": "string"
+  },
+  "tanggal_berlaku": {
+   "anyOf": [
+    {
+     "format": "date",
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "turunan",
+   "description": "Dari klausul 'mulai berlaku pada tanggal diundangkan' (Pasal penutup / Pasal II)",
+   "title": "Tanggal Berlaku"
+  },
+  "dasar_tanggal_berlaku": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Kalimat sumber tanggal_berlaku",
+   "title": "Dasar Tanggal Berlaku"
+  },
+  "lembaran_negara": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Persis dari dokumen, mis. 'LN Tahun 2024 Nomor 1'",
+   "title": "Lembaran Negara"
+  },
+  "tambahan_lembaran_negara": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Persis dari dokumen, mis. 'TLN Nomor 6905'",
+   "title": "Tambahan Lembaran Negara"
+  },
+  "status": {
+   "$ref": "#/$defs/StatusPeraturan",
+   "asal": "turunan",
+   "description": "Diturunkan dari relasi masuk (mengubah/mencabut), bukan diisi manual"
+  },
+  "status_per_tanggal": {
+   "asal": "turunan",
+   "description": "Tanggal acuan perhitungan status",
+   "format": "date",
+   "title": "Status Per Tanggal",
+   "type": "string"
+  },
+  "mengubah": {
+   "asal": "turunan",
+   "description": "ID peraturan yang diubah oleh peraturan ini (dari relasi)",
+   "items": {
+    "type": "string"
+   },
+   "title": "Mengubah",
+   "type": "array"
+  },
+  "diubah_oleh": {
+   "asal": "turunan",
+   "description": "ID peraturan yang mengubah peraturan ini (dari relasi)",
+   "items": {
+    "type": "string"
+   },
+   "title": "Diubah Oleh",
+   "type": "array"
+  },
+  "dasar_hukum": {
+   "asal": "turunan",
+   "description": "ID peraturan di bagian Mengingat (dari relasi dasar_hukum)",
+   "items": {
+    "type": "string"
+   },
+   "title": "Dasar Hukum",
+   "type": "array"
+  },
+  "jumlah_pasal": {
+   "asal": "turunan",
+   "description": "Jumlah pasal di batang tubuh (UU perubahan: pasal yang dimuat di butir)",
+   "title": "Jumlah Pasal",
+   "type": "integer"
+  },
+  "bidang": {
+   "asal": "model",
+   "description": "Topik hasil klasifikasi kata kunci — HASIL MODEL, bukan fakta dokumen",
+   "items": {
+    "$ref": "#/$defs/Bidang"
+   },
+   "title": "Bidang",
+   "type": "array"
+  },
+  "sumber_url": {
+   "asal": "sumber",
+   "description": "URL unduhan PDF resmi (JDIH BPK)",
+   "title": "Sumber Url",
+   "type": "string"
+  },
+  "halaman_sumber": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "sumber",
+   "description": "Halaman detail peraturan di JDIH",
+   "title": "Halaman Sumber"
+  },
+  "tanggal_unduh": {
+   "asal": "sumber",
+   "description": "Tanggal unduh",
+   "format": "date",
+   "title": "Tanggal Unduh",
+   "type": "string"
+  },
+  "hash_file": {
+   "asal": "sumber",
+   "description": "sha256 file PDF untuk audit & deteksi perubahan",
+   "pattern": "^sha256:[0-9a-f]{64}$",
+   "title": "Hash File",
+   "type": "string"
+  },
+  "jumlah_halaman": {
+   "asal": "sumber",
+   "description": "Jumlah halaman PDF",
+   "title": "Jumlah Halaman",
+   "type": "integer"
+  },
+  "metode_ekstraksi": {
+   "asal": "sumber",
+   "description": "Backend ekstraksi teks yang dipakai",
+   "title": "Metode Ekstraksi",
+   "type": "string"
+  },
+  "lapisan_teks": {
+   "asal": "turunan",
+   "description": "Teks digital asli atau OCR bawaan penerbit (dari luas halaman yang tertutup gambar)",
+   "enum": [
+    "digital",
+    "ocr_bawaan"
+   ],
+   "title": "Lapisan Teks",
+   "type": "string"
+  }
+ },
+ "required": [
+  "id",
+  "jenis",
+  "nomor",
+  "tahun",
+  "judul",
+  "tentang",
+  "judul_singkat",
+  "jenis_struktur",
+  "pembentuk",
+  "pemrakarsa",
+  "penandatangan",
+  "jabatan_penandatangan",
+  "pengundang",
+  "jabatan_pengundang",
+  "tanggal_ditetapkan",
+  "tanggal_diundangkan",
+  "tanggal_berlaku",
+  "dasar_tanggal_berlaku",
+  "lembaran_negara",
+  "tambahan_lembaran_negara",
+  "status",
+  "status_per_tanggal",
+  "mengubah",
+  "diubah_oleh",
+  "dasar_hukum",
+  "jumlah_pasal",
+  "bidang",
+  "sumber_url",
+  "halaman_sumber",
+  "tanggal_unduh",
+  "hash_file",
+  "jumlah_halaman",
+  "metode_ekstraksi",
+  "lapisan_teks"
+ ],
+ "title": "PeraturanMetadata",
+ "type": "object"
+}

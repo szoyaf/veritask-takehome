@@ -1,0 +1,508 @@
+{
+ "draft": false,
+ "gt_files": 18,
+ "gt_unverified_total": 0,
+ "methods": {
+  "pdfplumber": {
+   "pasal_dievaluasi": 18,
+   "pasal_ditemukan": 18,
+   "cer_mean_found": 0.0044,
+   "cer_mean_incl_missing": 0.0044,
+   "struktur_recall": 0.9634,
+   "struktur_precision": 0.9753,
+   "induk_accuracy": 1.0,
+   "inventaris": {
+    "uu-2008-11": {
+     "verified": false,
+     "expected": 54,
+     "found": 54,
+     "missing": [],
+     "extra": [],
+     "duplicated": []
+    },
+    "uu-2016-19": {
+     "verified": false,
+     "expected": 8,
+     "found": 8,
+     "missing": [],
+     "extra": [],
+     "duplicated": []
+    },
+    "uu-2024-1": {
+     "verified": false,
+     "expected": 19,
+     "found": 19,
+     "missing": [],
+     "extra": [],
+     "duplicated": []
+    }
+   },
+   "per_pasal": [
+    {
+     "file": "uu-2008-11__-__12.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 9,
+     "units_gt": 9,
+     "units_pred": 9,
+     "induk_pred": "BAB III",
+     "induk_gt": "BAB III",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__14.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 3,
+     "units_gt": 3,
+     "units_pred": 3,
+     "induk_pred": "BAB IV > Bagian Kesatu",
+     "induk_gt": "BAB IV > Bagian Kesatu",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__27.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 4,
+     "units_gt": 4,
+     "units_pred": 4,
+     "induk_pred": "BAB VII",
+     "induk_gt": "BAB VII",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__28.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 2,
+     "units_gt": 2,
+     "units_pred": 2,
+     "induk_pred": "BAB VII",
+     "induk_gt": "BAB VII",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__29.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 0,
+     "units_gt": 0,
+     "units_pred": 0,
+     "induk_pred": "BAB VII",
+     "induk_gt": "BAB VII",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__31.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 4,
+     "units_gt": 4,
+     "units_pred": 4,
+     "induk_pred": "BAB VII",
+     "induk_gt": "BAB VII",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__5.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 6,
+     "units_gt": 6,
+     "units_pred": 6,
+     "induk_pred": "BAB III",
+     "induk_gt": "BAB III",
+     "diffs": []
+    },
+    {
+     "file": "uu-2016-19__3__26.txt",
+     "found": true,
+     "cer": 0.001,
+     "units_ok": 5,
+     "units_gt": 5,
+     "units_pred": 5,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "insert: GT «…) Ketentuan mengenai tata[] cara penghapusan Informa…» vs PRED «[.]»"
+     ]
+    },
+    {
+     "file": "uu-2016-19__6__40.txt",
+     "found": true,
+     "cer": 0.0038,
+     "units_ok": 8,
+     "units_gt": 8,
+     "units_pred": 8,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "replace: GT «…am melakukan pencegahan s[eb]agaimana dimaksud pada ay…» vs PRED «[6l]»",
+      "insert: GT «… institusi yang memiliki []data elektronik strategis…» vs PRED «[. ]»",
+      "replace: GT «…uat Dokumen Elektronik da[n] rekam cadang elektronikn…» vs PRED «[l]»"
+     ]
+    },
+    {
+     "file": "uu-2016-19__8__45A.txt",
+     "found": true,
+     "cer": 0.0067,
+     "units_ok": 2,
+     "units_gt": 2,
+     "units_pred": 2,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "insert: GT «…au denda paling banyak Rp[]1.000.000.000,00 (satu mi…» vs PRED «[ ]»",
+      "insert: GT «…da paling banyak Rp1.000.[]000.000,00 (satu miliar r…» vs PRED «[ ]»",
+      "insert: GT «…au denda paling banyak Rp[]1.000.000.000,00 (satu mi…» vs PRED «[ ]»"
+     ]
+    },
+    {
+     "file": "uu-2016-19__8__45B.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 0,
+     "units_gt": 0,
+     "units_pred": 0,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": []
+    },
+    {
+     "file": "uu-2024-1__14__40A.txt",
+     "found": true,
+     "cer": 0.0052,
+     "units_ok": 10,
+     "units_gt": 10,
+     "units_pred": 10,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "replace: GT «…ka melaksanakan tanggung [j]awab sebagaimana dimaksud…» vs PRED «[J]»",
+      "replace: GT «…istratif sebagaimana dima[k]sud pada ayat (4) dapat b…» vs PRED «[l]»",
+      "delete: GT «…eguran tertulis; b. denda[ ]administratif; c. penghen…» vs PRED «[]»"
+     ]
+    },
+    {
+     "file": "uu-2024-1__3__13A.txt",
+     "found": true,
+     "cer": 0.002,
+     "units_ok": 10,
+     "units_gt": 10,
+     "units_pred": 10,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "replace: GT «…ayanan sebagaimana dimaks[u]d pada ayat (1) diatur da…» vs PRED «[q]»"
+     ]
+    },
+    {
+     "file": "uu-2024-1__5__16B.txt",
+     "found": true,
+     "cer": 0.0024,
+     "units_ok": 7,
+     "units_gt": 7,
+     "units_pred": 7,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "delete: GT «…eguran tertulis; b. denda[ ]administratif; c. penghen…» vs PRED «[]»"
+     ]
+    },
+    {
+     "file": "uu-2024-1__6__17.txt",
+     "found": true,
+     "cer": 0.053,
+     "units_ok": 3,
+     "units_gt": 4,
+     "units_pred": 4,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "replace: GT «…ng diamankan dengan Serti[f]ikat Elektronik. (3) Kete…» vs PRED «[l]»",
+      "replace: GT «…an lebih lanjut mengenai [p]enyelenggaraan Transaksi …» vs PRED «[Transaksi ir]»",
+      "delete: GT «…mengenai penyelenggaraan [Transaksi ]Elektronik sebagaimana di…» vs PRED «[]»"
+     ]
+    },
+    {
+     "file": "uu-2024-1__8__27.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 2,
+     "units_gt": 2,
+     "units_pred": 2,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": []
+    },
+    {
+     "file": "uu-2024-1__9__27A.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 0,
+     "units_gt": 0,
+     "units_pred": 0,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": []
+    },
+    {
+     "file": "uu-2024-1__9__27B.txt",
+     "found": true,
+     "cer": 0.0043,
+     "units_ok": 4,
+     "units_gt": 6,
+     "units_pred": 5,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "delete: GT «… milik orang lain; atau b[.] memberi utang, membuat p…» vs PRED «[]»",
+      "replace: GT «…elawan hukum, dengan anca[m]an pencemaran atau dengan…» vs PRED «[rn]»",
+      "replace: GT «…suatu barang yang sebagia[n] atau seluruhnya milik or…» vs PRED «[l]»"
+     ]
+    }
+   ]
+  },
+  "pymupdf": {
+   "pasal_dievaluasi": 18,
+   "pasal_ditemukan": 12,
+   "cer_mean_found": 0.0011,
+   "cer_mean_incl_missing": 0.3341,
+   "struktur_recall": 0.6463,
+   "struktur_precision": 1.0,
+   "induk_accuracy": 1.0,
+   "inventaris": {
+    "uu-2008-11": {
+     "verified": false,
+     "expected": 54,
+     "found": 54,
+     "missing": [],
+     "extra": [],
+     "duplicated": []
+    },
+    "uu-2016-19": {
+     "verified": false,
+     "expected": 8,
+     "found": 8,
+     "missing": [],
+     "extra": [],
+     "duplicated": []
+    },
+    "uu-2024-1": {
+     "verified": false,
+     "expected": 19,
+     "found": 3,
+     "missing": [
+      "10:28",
+      "11:29",
+      "12:36",
+      "13:40",
+      "14:40A",
+      "15:43",
+      "16:45",
+      "17:45A",
+      "18:45B",
+      "5:16A",
+      "5:16B",
+      "6:17",
+      "7:18A",
+      "8:27",
+      "9:27A",
+      "9:27B"
+     ],
+     "extra": [],
+     "duplicated": []
+    }
+   },
+   "per_pasal": [
+    {
+     "file": "uu-2008-11__-__12.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 9,
+     "units_gt": 9,
+     "units_pred": 9,
+     "induk_pred": "BAB III",
+     "induk_gt": "BAB III",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__14.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 3,
+     "units_gt": 3,
+     "units_pred": 3,
+     "induk_pred": "BAB IV > Bagian Kesatu",
+     "induk_gt": "BAB IV > Bagian Kesatu",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__27.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 4,
+     "units_gt": 4,
+     "units_pred": 4,
+     "induk_pred": "BAB VII",
+     "induk_gt": "BAB VII",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__28.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 2,
+     "units_gt": 2,
+     "units_pred": 2,
+     "induk_pred": "BAB VII",
+     "induk_gt": "BAB VII",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__29.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 0,
+     "units_gt": 0,
+     "units_pred": 0,
+     "induk_pred": "BAB VII",
+     "induk_gt": "BAB VII",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__31.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 4,
+     "units_gt": 4,
+     "units_pred": 4,
+     "induk_pred": "BAB VII",
+     "induk_gt": "BAB VII",
+     "diffs": []
+    },
+    {
+     "file": "uu-2008-11__-__5.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 6,
+     "units_gt": 6,
+     "units_pred": 6,
+     "induk_pred": "BAB III",
+     "induk_gt": "BAB III",
+     "diffs": []
+    },
+    {
+     "file": "uu-2016-19__3__26.txt",
+     "found": true,
+     "cer": 0.001,
+     "units_ok": 5,
+     "units_gt": 5,
+     "units_pred": 5,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "insert: GT «…) Ketentuan mengenai tata[] cara penghapusan Informa…» vs PRED «[.]»"
+     ]
+    },
+    {
+     "file": "uu-2016-19__6__40.txt",
+     "found": true,
+     "cer": 0.0038,
+     "units_ok": 8,
+     "units_gt": 8,
+     "units_pred": 8,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "replace: GT «…am melakukan pencegahan s[eb]agaimana dimaksud pada ay…» vs PRED «[6l]»",
+      "insert: GT «… institusi yang memiliki []data elektronik strategis…» vs PRED «[. ]»",
+      "replace: GT «…uat Dokumen Elektronik da[n] rekam cadang elektronikn…» vs PRED «[l]»"
+     ]
+    },
+    {
+     "file": "uu-2016-19__8__45A.txt",
+     "found": true,
+     "cer": 0.0067,
+     "units_ok": 2,
+     "units_gt": 2,
+     "units_pred": 2,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "insert: GT «…au denda paling banyak Rp[]1.000.000.000,00 (satu mi…» vs PRED «[ ]»",
+      "insert: GT «…da paling banyak Rp1.000.[]000.000,00 (satu miliar r…» vs PRED «[ ]»",
+      "insert: GT «…au denda paling banyak Rp[]1.000.000.000,00 (satu mi…» vs PRED «[ ]»"
+     ]
+    },
+    {
+     "file": "uu-2016-19__8__45B.txt",
+     "found": true,
+     "cer": 0.0,
+     "units_ok": 0,
+     "units_gt": 0,
+     "units_pred": 0,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": []
+    },
+    {
+     "file": "uu-2024-1__14__40A.txt",
+     "found": false,
+     "cer": 1.0,
+     "units_ok": 0,
+     "units_gt": 10
+    },
+    {
+     "file": "uu-2024-1__3__13A.txt",
+     "found": true,
+     "cer": 0.002,
+     "units_ok": 10,
+     "units_gt": 10,
+     "units_pred": 10,
+     "induk_pred": "-",
+     "induk_gt": "-",
+     "diffs": [
+      "replace: GT «…ayanan sebagaimana dimaks[u]d pada ayat (1) diatur da…» vs PRED «[q]»"
+     ]
+    },
+    {
+     "file": "uu-2024-1__5__16B.txt",
+     "found": false,
+     "cer": 1.0,
+     "units_ok": 0,
+     "units_gt": 7
+    },
+    {
+     "file": "uu-2024-1__6__17.txt",
+     "found": false,
+     "cer": 1.0,
+     "units_ok": 0,
+     "units_gt": 4
+    },
+    {
+     "file": "uu-2024-1__8__27.txt",
+     "found": false,
+     "cer": 1.0,
+     "units_ok": 0,
+     "units_gt": 2
+    },
+    {
+     "file": "uu-2024-1__9__27A.txt",
+     "found": false,
+     "cer": 1.0,
+     "units_ok": 0,
+     "units_gt": 0
+    },
+    {
+     "file": "uu-2024-1__9__27B.txt",
+     "found": false,
+     "cer": 1.0,
+     "units_ok": 0,
+     "units_gt": 6
+    }
+   ]
+  }
+ }
+}

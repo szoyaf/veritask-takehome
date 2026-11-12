@@ -1,0 +1,8 @@
+# peraturan: uu-2024-1
+# butir: 9
+# pasal: 27A
+# induk: -
+# halaman: 8
+# verified: yes
+# sumber_gt: ditranskripsi dari gambar halaman PDF (screenshot + render halaman), bukan dari lapisan teks
+Setiap Orang dengan sengaja menyerang kehormatan atau nama baik orang lain dengan cara menuduhkan suatu hal, dengan maksud supaya hal tersebut diketahui umum dalam bentuk Informasi Elektronik dan/atau Dokumen Elektronik yang dilakukan melalui Sistem Elektronik.

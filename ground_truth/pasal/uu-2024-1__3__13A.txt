@@ -1,0 +1,17 @@
+# peraturan: uu-2024-1
+# butir: 3
+# pasal: 13A
+# induk: -
+# halaman: 4
+# verified: yes
+# sumber_gt: ditranskripsi dari gambar halaman PDF (screenshot + render halaman), bukan dari lapisan teks
+(1) Penyelenggara Sertifikasi Elektronik dapat menyelenggarakan layanan berupa:
+  a. Tanda Tangan Elektronik;
+  b. segel elektronik;
+  c. penanda waktu elektronik;
+  d. layanan pengiriman elektronik tercatat;
+  e. autentikasi situs web;
+  f. preservasi Tanda Tangan Elektronik dan/atau segel elektronik;
+  g. identitas digital; dan/atau
+  h. layanan lain yang menggunakan Sertifikat Elektronik.
+(2) Ketentuan lebih lanjut mengenai penyelenggaraan layanan sebagaimana dimaksud pada ayat (1) diatur dalam Peraturan Pemerintah.

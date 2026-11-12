@@ -1,0 +1,183 @@
+[
+ {
+  "id": "uu-2024-1",
+  "jenis": "UU",
+  "nomor": 1,
+  "tahun": 2024,
+  "judul": "Undang-Undang Nomor 1 Tahun 2024 tentang Perubahan Kedua atas Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik",
+  "tentang": "Informasi dan Transaksi Elektronik",
+  "judul_singkat": "UU 1/2024",
+  "jenis_struktur": "perubahan",
+  "pembentuk": [
+   "Dewan Perwakilan Rakyat Republik Indonesia",
+   "Presiden Republik Indonesia"
+  ],
+  "pemrakarsa": null,
+  "penandatangan": "Joko Widodo",
+  "jabatan_penandatangan": "Presiden Republik Indonesia",
+  "pengundang": "Pratikno",
+  "jabatan_pengundang": "Menteri Sekretaris Negara",
+  "tanggal_ditetapkan": "2024-01-02",
+  "tanggal_diundangkan": "2024-01-02",
+  "tanggal_berlaku": "2024-01-02",
+  "dasar_tanggal_berlaku": "mulai berlaku pada tanggal diundangkan",
+  "lembaran_negara": "LN Tahun 2024 Nomor 1",
+  "tambahan_lembaran_negara": "TLN Nomor 6905",
+  "status": "berlaku",
+  "status_per_tanggal": "2026-11-10",
+  "mengubah": [
+   "uu-2008-11"
+  ],
+  "diubah_oleh": [],
+  "dasar_hukum": [
+   "uu-2008-11",
+   "uu-2016-19",
+   "uud-1945"
+  ],
+  "jumlah_pasal": 19,
+  "bidang": [
+   {
+    "label": "pidana",
+    "skor": 0.27,
+    "metode": "keyword_rules_v1"
+   },
+   {
+    "label": "acara pidana & penyidikan",
+    "skor": 0.169,
+    "metode": "keyword_rules_v1"
+   },
+   {
+    "label": "transaksi & kontrak elektronik",
+    "skor": 0.138,
+    "metode": "keyword_rules_v1"
+   }
+  ],
+  "sumber_url": "https://peraturan.bpk.go.id/Download/332870/UU%20Nomor%201%20Tahun%202024.pdf",
+  "halaman_sumber": "https://peraturan.bpk.go.id/Details/274494/uu-no-1-tahun-2024",
+  "tanggal_unduh": "2026-11-07",
+  "hash_file": "sha256:8cdb6721dd5f46e45f13e8a3588c6c1efc614ea4361ce94efebe40e8e4289d5f",
+  "jumlah_halaman": 39,
+  "metode_ekstraksi": "pdfplumber",
+  "lapisan_teks": "ocr_bawaan"
+ },
+ {
+  "id": "uu-2016-19",
+  "jenis": "UU",
+  "nomor": 19,
+  "tahun": 2016,
+  "judul": "Undang-Undang Nomor 19 Tahun 2016 tentang Perubahan atas Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik",
+  "tentang": "Informasi dan Transaksi Elektronik",
+  "judul_singkat": "UU 19/2016",
+  "jenis_struktur": "perubahan",
+  "pembentuk": [
+   "Dewan Perwakilan Rakyat Republik Indonesia",
+   "Presiden Republik Indonesia"
+  ],
+  "pemrakarsa": null,
+  "penandatangan": "Joko Widodo",
+  "jabatan_penandatangan": "Presiden Republik Indonesia",
+  "pengundang": "Yasonna H. Laoly",
+  "jabatan_pengundang": "Menteri Hukum dan Hakasasi Manusia",
+  "tanggal_ditetapkan": "2016-11-25",
+  "tanggal_diundangkan": "2016-11-25",
+  "tanggal_berlaku": "2016-11-25",
+  "dasar_tanggal_berlaku": "mulai berlaku pada tanggal diundangkan",
+  "lembaran_negara": "LN Tahun 2016 Nomor 251",
+  "tambahan_lembaran_negara": "TLN Nomor 5952",
+  "status": "berlaku",
+  "status_per_tanggal": "2026-11-10",
+  "mengubah": [
+   "uu-2008-11"
+  ],
+  "diubah_oleh": [],
+  "dasar_hukum": [
+   "uu-2008-11",
+   "uud-1945"
+  ],
+  "jumlah_pasal": 8,
+  "bidang": [
+   {
+    "label": "pidana",
+    "skor": 0.263,
+    "metode": "keyword_rules_v1"
+   },
+   {
+    "label": "acara pidana & penyidikan",
+    "skor": 0.241,
+    "metode": "keyword_rules_v1"
+   },
+   {
+    "label": "transaksi & kontrak elektronik",
+    "skor": 0.173,
+    "metode": "keyword_rules_v1"
+   }
+  ],
+  "sumber_url": "https://peraturan.bpk.go.id/Download/26676/UU%20Nomor%20%2019%20Tahun%202016.pdf",
+  "halaman_sumber": "https://peraturan.bpk.go.id/Details/37582/uu-no-19-tahun-2016",
+  "tanggal_unduh": "2026-11-07",
+  "hash_file": "sha256:1ecbeed2f762355a13b31691d19b474cb02b4912b445762c4f354c9a4ba5a1d0",
+  "jumlah_halaman": 21,
+  "metode_ekstraksi": "pdfplumber",
+  "lapisan_teks": "ocr_bawaan"
+ },
+ {
+  "id": "uu-2008-11",
+  "jenis": "UU",
+  "nomor": 11,
+  "tahun": 2008,
+  "judul": "Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik",
+  "tentang": "Informasi dan Transaksi Elektronik",
+  "judul_singkat": "UU 11/2008",
+  "jenis_struktur": "induk",
+  "pembentuk": [
+   "Dewan Perwakilan Rakyat Republik Indonesia",
+   "Presiden Republik Indonesia"
+  ],
+  "pemrakarsa": null,
+  "penandatangan": "Dr. H. Susilo Bambang Yudhoyono",
+  "jabatan_penandatangan": "Presiden Republik Indonesia",
+  "pengundang": "Andi Mattalata",
+  "jabatan_pengundang": "Menteri Hukum dan Hak Asasi Manusia",
+  "tanggal_ditetapkan": "2008-04-21",
+  "tanggal_diundangkan": "2008-04-21",
+  "tanggal_berlaku": "2008-04-21",
+  "dasar_tanggal_berlaku": "mulai berlaku pada tanggal diundangkan",
+  "lembaran_negara": "LN Tahun 2008 Nomor 58",
+  "tambahan_lembaran_negara": "TLN Nomor 4843",
+  "status": "diubah",
+  "status_per_tanggal": "2026-11-10",
+  "mengubah": [],
+  "diubah_oleh": [
+   "uu-2016-19",
+   "uu-2024-1"
+  ],
+  "dasar_hukum": [
+   "uud-1945"
+  ],
+  "jumlah_pasal": 54,
+  "bidang": [
+   {
+    "label": "pidana",
+    "skor": 0.277,
+    "metode": "keyword_rules_v1"
+   },
+   {
+    "label": "tanda tangan & sertifikasi elektronik",
+    "skor": 0.178,
+    "metode": "keyword_rules_v1"
+   },
+   {
+    "label": "transaksi & kontrak elektronik",
+    "skor": 0.164,
+    "metode": "keyword_rules_v1"
+   }
+  ],
+  "sumber_url": "https://peraturan.bpk.go.id/Download/26683/UU%20Nomor%2011%20Tahun%202008.pdf",
+  "halaman_sumber": "https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008",
+  "tanggal_unduh": "2026-11-07",
+  "hash_file": "sha256:3c174f55b4a7982af268a24316e3353c8e712fc8a57e87a9fdf0502da4ea0af3",
+  "jumlah_halaman": 38,
+  "metode_ekstraksi": "pdfplumber",
+  "lapisan_teks": "digital"
+ }
+]

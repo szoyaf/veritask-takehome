@@ -1,0 +1,14 @@
+# peraturan: uu-2024-1
+# butir: 5
+# pasal: 16B
+# induk: -
+# halaman: 6
+# verified: yes
+# sumber_gt: ditranskripsi dari gambar halaman PDF (screenshot + render halaman), bukan dari lapisan teks
+(1) Pelanggaran terhadap ketentuan sebagaimana dimaksud dalam Pasal 16A dikenai sanksi administratif.
+(2) Sanksi administratif sebagaimana dimaksud pada ayat (1) dapat berupa:
+  a. teguran tertulis;
+  b. denda administratif;
+  c. penghentian sementara; dan/atau
+  d. pemutusan Akses.
+(3) Ketentuan lebih lanjut mengenai pengenaan sanksi administratif sebagaimana dimaksud pada ayat (1) dan ayat (2) diatur dalam Peraturan Pemerintah.

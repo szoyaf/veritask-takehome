@@ -1,0 +1,17 @@
+# peraturan: uu-2024-1
+# butir: 14
+# pasal: 40A
+# induk: -
+# halaman: 12
+# verified: yes
+# sumber_gt: ditranskripsi dari gambar halaman PDF (screenshot + render halaman), bukan dari lapisan teks
+(1) Pemerintah bertanggung jawab dalam mendorong terciptanya ekosistem digital yang adil, akuntabel, aman, dan inovatif.
+(2) Dalam rangka melaksanakan tanggung jawab sebagaimana dimaksud pada ayat (1), Pemerintah berwenang memerintahkan Penyelenggara Sistem Elektronik untuk melakukan penyesuaian pada Sistem Elektronik dan/atau melakukan tindakan tertentu.
+(3) Penyelenggara Sistem Elektronik wajib melaksanakan perintah sebagaimana dimaksud pada ayat (2).
+(4) Dalam hal Penyelenggara Sistem Elektronik melanggar kewajiban sebagaimana dimaksud pada ayat (3), Penyelenggara Sistem Elektronik dikenai sanksi administratif.
+(5) Sanksi administratif sebagaimana dimaksud pada ayat (4) dapat berupa:
+  a. teguran tertulis;
+  b. denda administratif;
+  c. penghentian sementara; dan/atau
+  d. pemutusan Akses.
+(6) Ketentuan lebih lanjut mengenai tanggung jawab Pemerintah sebagaimana dimaksud pada ayat (1), wewenang Pemerintah sebagaimana dimaksud pada ayat (2), kewajiban Penyelenggara Sistem Elektronik sebagaimana dimaksud pada ayat (3), dan pengenaan sanksi administratif sebagaimana dimaksud pada ayat (4) dan ayat (5) diatur dalam Peraturan Pemerintah.

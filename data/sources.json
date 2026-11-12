@@ -1,0 +1,26 @@
+[
+  {
+    "id": "uu-2024-1",
+    "file": "data/raw/uu-2024-1.pdf",
+    "detail_url": "https://peraturan.bpk.go.id/Details/274494/uu-no-1-tahun-2024",
+    "sumber_url": "https://peraturan.bpk.go.id/Download/332870/UU%20Nomor%201%20Tahun%202024.pdf",
+    "tanggal_unduh": "2026-11-07",
+    "hash_file": "sha256:8cdb6721dd5f46e45f13e8a3588c6c1efc614ea4361ce94efebe40e8e4289d5f"
+  },
+  {
+    "id": "uu-2016-19",
+    "file": "data/raw/uu-2016-19.pdf",
+    "detail_url": "https://peraturan.bpk.go.id/Details/37582/uu-no-19-tahun-2016",
+    "sumber_url": "https://peraturan.bpk.go.id/Download/26676/UU%20Nomor%20%2019%20Tahun%202016.pdf",
+    "tanggal_unduh": "2026-11-07",
+    "hash_file": "sha256:1ecbeed2f762355a13b31691d19b474cb02b4912b445762c4f354c9a4ba5a1d0"
+  },
+  {
+    "id": "uu-2008-11",
+    "file": "data/raw/uu-2008-11.pdf",
+    "detail_url": "https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008",
+    "sumber_url": "https://peraturan.bpk.go.id/Download/26683/UU%20Nomor%2011%20Tahun%202008.pdf",
+    "tanggal_unduh": "2026-11-07",
+    "hash_file": "sha256:3c174f55b4a7982af268a24316e3353c8e712fc8a57e87a9fdf0502da4ea0af3"
+  }
+]

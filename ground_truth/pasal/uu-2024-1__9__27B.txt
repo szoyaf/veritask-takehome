@@ -1,0 +1,13 @@
+# peraturan: uu-2024-1
+# butir: 9
+# pasal: 27B
+# induk: -
+# halaman: 8
+# verified: yes
+# sumber_gt: ditranskripsi dari gambar halaman PDF (screenshot + render halaman), bukan dari lapisan teks
+(1) Setiap Orang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan Informasi Elektronik dan/atau Dokumen Elektronik, dengan maksud untuk menguntungkan diri sendiri atau orang lain secara melawan hukum, memaksa orang dengan ancaman kekerasan untuk:
+  a. memberikan suatu barang, yang sebagian atau seluruhnya milik orang tersebut atau milik orang lain; atau
+  b. memberi utang, membuat pengakuan utang, atau menghapuskan piutang.
+(2) Setiap Orang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan Informasi Elektronik dan/atau Dokumen Elektronik, dengan maksud untuk menguntungkan diri sendiri atau orang lain secara melawan hukum, dengan ancaman pencemaran atau dengan ancaman akan membuka rahasia, memaksa orang supaya:
+  a. memberikan suatu barang yang sebagian atau seluruhnya milik orang tersebut atau milik orang lain; atau
+  b. memberi utang, membuat pengakuan utang, atau menghapuskan piutang.

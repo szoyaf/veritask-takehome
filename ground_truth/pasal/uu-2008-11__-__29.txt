@@ -1,0 +1,8 @@
+# peraturan: uu-2008-11
+# butir: -
+# pasal: 29
+# induk: BAB VII
+# halaman: 15
+# verified: yes
+# sumber_gt: lapisan teks digital asli (PDF dari Word, bukan scan) = teks resmi
+Setiap Orang dengan sengaja dan tanpa hak mengirimkan Informasi Elektronik dan/atau Dokumen Elektronik yang berisi ancaman kekerasan atau menakut-nakuti yang ditujukan secara pribadi.

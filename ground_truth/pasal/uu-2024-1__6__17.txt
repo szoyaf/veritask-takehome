@@ -1,0 +1,11 @@
+# peraturan: uu-2024-1
+# butir: 6
+# pasal: 17
+# induk: -
+# halaman: 6
+# verified: yes
+# sumber_gt: ditranskripsi dari gambar halaman PDF (screenshot + render halaman), bukan dari lapisan teks
+(1) Penyelenggaraan Transaksi Elektronik dapat dilakukan dalam lingkup publik atau privat.
+(2) Para pihak yang melakukan Transaksi Elektronik sebagaimana dimaksud pada ayat (1) wajib beriktikad baik dalam melakukan interaksi dan/atau pertukaran Informasi Elektronik dan/atau Dokumen Elektronik selama transaksi berlangsung.
+(2a) Transaksi Elektronik yang memiliki risiko tinggi bagi para pihak menggunakan Tanda Tangan Elektronik yang diamankan dengan Sertifikat Elektronik.
+(3) Ketentuan lebih lanjut mengenai penyelenggaraan Transaksi Elektronik sebagaimana dimaksud pada ayat (1), ayat (2), dan ayat (2a) diatur dalam Peraturan Pemerintah.

@@ -1,0 +1,27 @@
+{
+  "_catatan": "Fakta di luar 3 PDF korpus, diisi manual DENGAN sumber. Dipakai hanya untuk menghitung tanggal akhir berlaku yang di dalam korpus dirumuskan secara bersyarat. Ditandai sumber_nilai='manual_eksternal' di output.",
+  "peraturan": {
+    "uu-2023-1": {
+      "jenis": "UU",
+      "nomor": 1,
+      "tahun": 2023,
+      "judul": "Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana",
+      "tanggal_diundangkan": "2023-01-02",
+      "tanggal_berlaku": "2026-01-02",
+      "dasar_tanggal_berlaku": "Pasal 624 UU 1/2023: mulai berlaku setelah 3 (tiga) tahun terhitung sejak tanggal diundangkan (2 Januari 2023).",
+      "sumber_url": "https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023"
+    },
+    "uud-1945": {
+      "jenis": "UUD",
+      "nomor": null,
+      "tahun": 1945,
+      "judul": "Undang-Undang Dasar Negara Republik Indonesia Tahun 1945"
+    },
+    "uu-1981-8": {
+      "jenis": "UU",
+      "nomor": 8,
+      "tahun": 1981,
+      "judul": "Undang-Undang Nomor 8 Tahun 1981 tentang Hukum Acara Pidana (KUHAP)"
+    }
+  }
+}

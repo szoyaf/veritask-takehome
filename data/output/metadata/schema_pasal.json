@@ -1,0 +1,399 @@
+{
+ "$defs": {
+  "Bidang": {
+   "properties": {
+    "label": {
+     "title": "Label",
+     "type": "string"
+    },
+    "skor": {
+     "description": "share of keyword hits, not a calibrated probability",
+     "maximum": 1,
+     "minimum": 0,
+     "title": "Skor",
+     "type": "number"
+    },
+    "metode": {
+     "const": "keyword_rules_v1",
+     "default": "keyword_rules_v1",
+     "title": "Metode",
+     "type": "string"
+    }
+   },
+   "required": [
+    "label",
+    "skor"
+   ],
+   "title": "Bidang",
+   "type": "object"
+  },
+  "Penjelasan": {
+   "properties": {
+    "teks": {
+     "asal": "ekstraksi",
+     "description": "Teks Penjelasan Pasal demi Pasal untuk pasal ini",
+     "title": "Teks",
+     "type": "string"
+    },
+    "sumber_peraturan": {
+     "asal": "turunan",
+     "description": "UU yang memuat penjelasan ini (bisa lebih lama dari bunyi pasal bila tidak diubah)",
+     "title": "Sumber Peraturan",
+     "type": "string"
+    }
+   },
+   "required": [
+    "teks",
+    "sumber_peraturan"
+   ],
+   "title": "Penjelasan",
+   "type": "object"
+  },
+  "StatusPasal": {
+   "enum": [
+    "berlaku",
+    "diubah",
+    "berlaku_sebagian",
+    "tidak_berlaku",
+    "dihapus",
+    "belum_berlaku"
+   ],
+   "title": "StatusPasal",
+   "type": "string"
+  },
+  "Unit": {
+   "properties": {
+    "jenis": {
+     "enum": [
+      "ayat",
+      "huruf",
+      "angka"
+     ],
+     "title": "Jenis",
+     "type": "string"
+    },
+    "nomor": {
+     "title": "Nomor",
+     "type": "string"
+    },
+    "teks": {
+     "title": "Teks",
+     "type": "string"
+    },
+    "anak": {
+     "default": [],
+     "items": {
+      "$ref": "#/$defs/Unit"
+     },
+     "title": "Anak",
+     "type": "array"
+    },
+    "berlaku_sampai": {
+     "anyOf": [
+      {
+       "format": "date",
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Berlaku Sampai"
+    }
+   },
+   "required": [
+    "jenis",
+    "nomor",
+    "teks"
+   ],
+   "title": "Unit",
+   "type": "object"
+  }
+ },
+ "properties": {
+  "pasal_id": {
+   "asal": "turunan",
+   "description": "ID pasal stabil, mis. 'uu-2008-11#pasal-27'",
+   "pattern": "^[a-z]+-\\d{4}-\\d+#pasal-\\d+[A-Z]?$",
+   "title": "Pasal Id",
+   "type": "string"
+  },
+  "versi_id": {
+   "asal": "turunan",
+   "description": "ID versi, '<pasal_id>@<peraturan yang menetapkan bunyi ini>'",
+   "title": "Versi Id",
+   "type": "string"
+  },
+  "peraturan_id": {
+   "asal": "turunan",
+   "description": "Peraturan tempat pasal ini berada (UU terkonsolidasi)",
+   "title": "Peraturan Id",
+   "type": "string"
+  },
+  "nomor": {
+   "asal": "ekstraksi",
+   "description": "Nomor pasal, mis. '27', '27A'",
+   "title": "Nomor",
+   "type": "string"
+  },
+  "bab": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "BAB induk, mis. 'BAB VII Perbuatan yang Dilarang' (pasal sisipan: BAB pasal asalnya)",
+   "title": "Bab"
+  },
+  "bagian": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Bagian induk bila ada",
+   "title": "Bagian"
+  },
+  "paragraf": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Paragraf induk bila ada",
+   "title": "Paragraf"
+  },
+  "teks": {
+   "asal": "ekstraksi",
+   "description": "Bunyi lengkap pasal versi ini",
+   "title": "Teks",
+   "type": "string"
+  },
+  "ayat": {
+   "asal": "ekstraksi",
+   "description": "Struktur ayat > huruf > angka",
+   "items": {
+    "$ref": "#/$defs/Unit"
+   },
+   "title": "Ayat",
+   "type": "array"
+  },
+  "penjelasan": {
+   "anyOf": [
+    {
+     "$ref": "#/$defs/Penjelasan"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "default": null,
+   "description": "Penjelasan Pasal demi Pasal yang ditautkan ke pasal ini (null bila tidak ada)"
+  },
+  "ditetapkan_oleh": {
+   "asal": "turunan",
+   "description": "Peraturan yang menetapkan bunyi versi ini",
+   "title": "Ditetapkan Oleh",
+   "type": "string"
+  },
+  "butir_perubahan": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "ekstraksi",
+   "description": "Nomor butir di Pasal I UU perubahan",
+   "title": "Butir Perubahan"
+  },
+  "jenis_perubahan": {
+   "asal": "turunan",
+   "description": "Apa yang berubah pada versi ini",
+   "enum": [
+    "asli",
+    "isi",
+    "penjelasan",
+    "sisipan",
+    "dihapus"
+   ],
+   "title": "Jenis Perubahan",
+   "type": "string"
+  },
+  "berlaku_sejak": {
+   "asal": "turunan",
+   "description": "tanggal_berlaku peraturan penetap",
+   "format": "date",
+   "title": "Berlaku Sejak",
+   "type": "string"
+  },
+  "berlaku_sampai": {
+   "anyOf": [
+    {
+     "format": "date",
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "turunan",
+   "description": "Mulai berlakunya versi berikut / batas keberlakuan; null = masih berlaku",
+   "title": "Berlaku Sampai"
+  },
+  "sebab_berakhir": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "turunan",
+   "description": "Relasi yang mengakhiri versi ini bila bukan versi berikutnya",
+   "title": "Sebab Berakhir"
+  },
+  "ayat_tidak_berlaku": {
+   "asal": "turunan",
+   "description": "Ayat yang sudah tidak berlaku per status_per_tanggal",
+   "items": {
+    "type": "string"
+   },
+   "title": "Ayat Tidak Berlaku",
+   "type": "array"
+  },
+  "status": {
+   "$ref": "#/$defs/StatusPasal",
+   "asal": "turunan",
+   "description": "Diturunkan dari relasi per status_per_tanggal"
+  },
+  "status_per_tanggal": {
+   "asal": "turunan",
+   "description": "Tanggal acuan status",
+   "format": "date",
+   "title": "Status Per Tanggal",
+   "type": "string"
+  },
+  "diubah_terakhir_oleh": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "turunan",
+   "description": "Peraturan terakhir yang mengubah pasal ini (semua versi)",
+   "title": "Diubah Terakhir Oleh"
+  },
+  "versi_sebelumnya": {
+   "anyOf": [
+    {
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "turunan",
+   "description": "versi_id yang digantikan",
+   "title": "Versi Sebelumnya"
+  },
+  "merujuk": {
+   "asal": "turunan",
+   "description": "pasal_id yang dirujuk teks versi ini",
+   "items": {
+    "type": "string"
+   },
+   "title": "Merujuk",
+   "type": "array"
+  },
+  "dirujuk_oleh": {
+   "asal": "turunan",
+   "description": "versi_id lain yang merujuk pasal ini",
+   "items": {
+    "type": "string"
+   },
+   "title": "Dirujuk Oleh",
+   "type": "array"
+  },
+  "mendelegasikan": {
+   "asal": "turunan",
+   "description": "Jenis peraturan pelaksana yang didelegasikan",
+   "items": {
+    "type": "string"
+   },
+   "title": "Mendelegasikan",
+   "type": "array"
+  },
+  "bidang": {
+   "asal": "model",
+   "description": "Topik hasil klasifikasi kata kunci — HASIL MODEL",
+   "items": {
+    "$ref": "#/$defs/Bidang"
+   },
+   "title": "Bidang",
+   "type": "array"
+  },
+  "halaman": {
+   "anyOf": [
+    {
+     "type": "integer"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "asal": "sumber",
+   "description": "Halaman PDF peraturan penetap tempat pasal mulai",
+   "title": "Halaman"
+  }
+ },
+ "required": [
+  "pasal_id",
+  "versi_id",
+  "peraturan_id",
+  "nomor",
+  "bab",
+  "bagian",
+  "paragraf",
+  "teks",
+  "ayat",
+  "ditetapkan_oleh",
+  "butir_perubahan",
+  "jenis_perubahan",
+  "berlaku_sejak",
+  "berlaku_sampai",
+  "sebab_berakhir",
+  "ayat_tidak_berlaku",
+  "status",
+  "status_per_tanggal",
+  "diubah_terakhir_oleh",
+  "versi_sebelumnya",
+  "merujuk",
+  "dirujuk_oleh",
+  "mendelegasikan",
+  "bidang",
+  "halaman"
+ ],
+ "title": "PasalMetadata",
+ "type": "object"
+}
